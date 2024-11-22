@@ -1,0 +1,6 @@
+<script>
+    if (location.pathname.startsWith('/.well-known/')) {
+        const newPath = location.pathname.replace('/.well-known/', '/well-known/');
+        location.replace(newPath);
+    }
+</script>
